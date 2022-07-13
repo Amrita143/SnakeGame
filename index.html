@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            min-height: 100vh;
+            background-color: aqua;
+        }
+        
+        div.snakegame {
+            min-width: 100%;
+            /* display: flexbox;
+            flex-direction: column;
+            justify-content: space-around; */
+        }
+        
+        button {
+            width: 25%;
+            height: 100px;
+            background-color: red;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding: 10px 10px 10px 10px;
+            font-weight: bolder;
+            font-size: xx-large;
+            color: white;
+            border-radius: 25px;
+            border: 5px solid black;
+        }
+        
+        .playNow {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="snakegame">
+        <img src="snakeGame.jpg" alt="" id="snake" width="100%">
+        <div class="playNow">
+            <button class="button">
+            Play Now
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.button').onclick = function() {
+            location.href = "./snakeGame.html";
+
+        };
+    </script>
+</body>
+
+</html>
