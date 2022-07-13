@@ -4,7 +4,7 @@ const foodSound = new Audio('food.mp3');
 const moveSound = new Audio('move.mp3');
 let direction = { x: 0, y: 0 };
 
-let speed = 3;
+let speed = 5;
 let score = 0;
 let lastTime = 0;
 let snakeArray = [
@@ -55,7 +55,7 @@ function gameFunction() {
     if (snakeArray[0].y === food.y && snakeArray[0].x === food.x) {
         foodSound.play();
         score += 1;
-        speed = speed + Math.log(score);
+        speed = 5 + Math.log(score);
 
         scoreBox.innerHTML = "Score: " + score;
         snakeArray.unshift({ x: snakeArray[0].x + direction.x, y: snakeArray[0].y + direction.y });
